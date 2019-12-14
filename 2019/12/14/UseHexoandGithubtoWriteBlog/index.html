@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>使用Hexo和GIthub建立自己的博客 - 抹茶控沐汐-开始与结束的地方</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="JaneMLYY,"> 
+    <meta name="description" content="我的生活,引言&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;这是写的第一篇文章，也把我的过程大致描述了一下，我的系统是Win10，所以演示也是在Win10的环,"> 
+    <meta name="author" content="JaneMLYY"> 
+    <link rel="alternative" href="atom.xml" title="抹茶控沐汐-开始与结束的地方" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+	
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-8691406134231910",
+              enable_page_level_ads: true
+         });
+    </script>
+    <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+<meta name="generator" content="Hexo 4.1.1"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">抹茶控沐汐-开始与结束的地方</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="icon-home image-icon" href="javascript:;" data-url="http://yoursite.com"></a>
+    <div title="播放/暂停" class="icon-play"></div>
+    <h3 class="subtitle">使用Hexo和GIthub建立自己的博客</h3>
+    <div class="social">
+        <!--<div class="like-icon">-->
+            <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+        <!--</div>-->
+        <!--<div>
+            <div class="share">
+                <a title="获取二维码" class="icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>-->
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">使用Hexo和GIthub建立自己的博客</h1>
+        <div class="stuff">
+            <span>十二月 14, 2019</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Github/" rel="tag">Github</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这是写的第一篇文章，也把我的过程大致描述了一下，我的系统是Win10，所以演示也是在<font color="red">Win10</font>的环境下，但因为是弄完后才开始写的，所以中途一些安装的过程截图就没有了，可以去某度搜一搜，还是蛮多的。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这是我的参考文章，我大概是按着这样的路子走的：<a href="https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html" target="_blank" rel="noopener">https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html</a></p>
+<h3 id="使用工具"><a href="#使用工具" class="headerlink" title="使用工具"></a>使用工具</h3><ul>
+<li><h5 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h5><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首先我们要去Github的官网：<a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a> ，注册一个账号，然后创建一个仓库，位置如下图：</p>
+<div  align=center><img src="UseHexoandGithubtoWriteBlog.assets/2019121401.png" alt="仓库创建" style="zoom:67%;" /></div>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;之后，我们开始创建仓库，按照下图的步骤：</p>
+<div  align=center><img src="UseHexoandGithubtoWriteBlog.assets/2019121402.png" align=center  alt="注册信息" style="zoom:50%;" /></div>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;然后我们创建成功，这样这方面暂且就算可以了。</p>
+</li>
+</ul>
+<ul>
+<li><h5 id="NodeJS"><a href="#NodeJS" class="headerlink" title="NodeJS"></a>NodeJS</h5><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;之后，我们再来安装NodeJS，根据自己的系统，安装版本：<a href="https://nodejs.org/en" target="_blank" rel="noopener">https://nodejs.org/en</a></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中途没有什么，想调安装位置就改一下，最后打开命令行，输入<code>node -v</code>,就可以查看已安装的版本了</p>
+<div  align=center><img src="UseHexoandGithubtoWriteBlog.assets/2019121403.png" align="middle"  alt="注册信息" style="zoom:80%;" /></div>
+
+
+
+</li>
+</ul>
+<ul>
+<li><h5 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h5><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;安装Git，去官网：<a href="https://git-scm.com/downloads/" target="_blank" rel="noopener">https://git-scm.com/downloads/</a> , 下载，安装中途会有一些是否生成桌面图标，开始菜单图标，我是勾选了。然后一路默认就可以了。安装成功后，在资源管理器里右键，菜单里会多出两个选项，说明就是可以了：</p>
+<div  align=center><img src="UseHexoandGithubtoWriteBlog.assets/2019121404.png" align="middle"  alt="安装Git" style="zoom:50%;" /></div>
+
+
+
+</li>
+</ul>
+<ul>
+<li><h5 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h5><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在某个盘下，创建一个文件夹名为“Hexo”，进去，右键，“Git bash here”，进入命令行，输入：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;同样，你可以输入<code>hexo v</code> 来查看版本，然后在输入：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">hexo</span> <span class="selector-tag">init</span></span><br></pre></td></tr></table></figure>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用来初始化此文件夹，可以看到此文件夹内的内容：</p>
+<div  align=center><img src="UseHexoandGithubtoWriteBlog.assets/2019121405.png" align="middle"  alt="初始化Hexo" style="zoom:67%;" /></div>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public文件夹里面是存储的最终网页文件，每个网页<font color="0000AA">html</font>，<font color="0000AA">js</font>，<font color="0000AA">css</font>等。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;source文件夹用来原始原始数据，也就是你以后要写的博客，后缀为.md的<font color="DD00AA">markdown</font>文件。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;themes文件夹存储博客的主题文件，可以自己写，也可以去下别人已写好的，后续会讲到。</p>
+</li>
+</ul>
+<h3 id="进阶配置"><a href="#进阶配置" class="headerlink" title="进阶配置"></a>进阶配置</h3><ul>
+<li><h5 id="配置SSH"><a href="#配置SSH" class="headerlink" title="配置SSH"></a>配置SSH</h5><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;进入Git Bash，输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~&#x2F;. ssh #检查本机已存在的ssh密钥</span><br></pre></td></tr></table></figure>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如果提示：No such file or directory 说明你是第一次使用git。然后输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;邮件地址&quot;</span><br></pre></td></tr></table></figure>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;再按3次回车，会在C盘用户目录下生成一个”.ssh\id_rsa.pub”的文件，记事本打开并复制里面的内容，打开你的github主页，进入个人设置 -&gt; SSH and GPG keys -&gt; New SSH key：</p>
+<div  align=center><img src="UseHexoandGithubtoWriteBlog.assets/2019121406.png" align="middle"  alt="添加SSH" style="zoom:50%;" /></div>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其中Title可以给你的SSH起一个名字，Key则把你刚复制得到的SSH粘贴进去。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;测试一下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;然后输入yes，可以看到类似Hi ****，You’ve successfully authenticated, but GitHub does not provide shell access.就说明可以了，然后在配置一下用户名和邮箱：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;&quot;&#x2F;&#x2F; 双引号内填你的用户名</span><br><span class="line">$ git config --global user.email  &quot;&quot;&#x2F;&#x2F; 双引号内填你注册GitHub的邮</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<ul>
+<li><h5 id="查看初始博客"><a href="#查看初始博客" class="headerlink" title="查看初始博客"></a>查看初始博客</h5><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;进入Git Bash，输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g # 生成</span><br><span class="line">$ hexo s # 启动服务</span><br></pre></td></tr></table></figure>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;然后就可以在浏览器中输入<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> ,即可查看Hello World了，如果加载不出来，可能是端口号4000被占用了，换一个端口号（具体我还真不知道怎么换）。</p>
+</li>
+</ul>
+<ul>
+<li><h5 id="部署到GitHub"><a href="#部署到GitHub" class="headerlink" title="部署到GitHub"></a>部署到GitHub</h5><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;进入Git Bash，输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git  # 安装部署控件</span><br><span class="line">hexo d  #部署</span><br></pre></td></tr></table></figure>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;然后在地址栏中，输入  <u>你的名字.github,io</u>   就可以看到你的博客了。当然你还可以绑定你的域名，直接用你的域名来访问你的博客（怎么绑定还不会）</p>
+</li>
+</ul>
+<h3 id="更改主题"><a href="#更改主题" class="headerlink" title="更改主题"></a>更改主题</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hexo提供了一些主题：<a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a> ，找一个你喜欢的，然后下载。我下载的是<a href="https://github.com/Fechin/hexo-theme-diaspora/" target="_blank" rel="noopener">https://github.com/Fechin/hexo-theme-diaspora/</a> ，根据这里面进行修改的。要注意的是，本身有一个<font color="red"> _config.yml</font>文件，你下载的主题还会有一个<font color="red"> _config.yaml</font>文件，改的时候不要弄混了。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当然，你还可以在这个主题上在修改，怎么修改就要看你的能力了。</p>
+<h3 id="撰写文章"><a href="#撰写文章" class="headerlink" title="撰写文章"></a>撰写文章</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;回到Hexo根目录，启动Git Bash，输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new &#39;***&#39;  #‘’里面输入文章名字</span><br></pre></td></tr></table></figure>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;然后，在souce-&gt;_posts文件夹里就可以找到***.md的文件，打开，类似下面的内容：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">--- </span><br><span class="line">title: postName #文章页面上的显示名称</span><br><span class="line">date: 2019-12-14 16:43:09 #文章生成时间</span><br><span class="line">categories: </span><br><span class="line">	-***</span><br><span class="line">	-***</span><br><span class="line">tags:</span><br><span class="line">	-***</span><br><span class="line">	-***</span><br><span class="line">description: #文章摘要，会出现在meta的description里面</span><br><span class="line">--- </span><br><span class="line">以下是正文</span><br></pre></td></tr></table></figure>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;写好之后，<code>hexo g</code>，<code>hexo d</code>，即可。</p>
+<h3 id="常用命令介绍"><a href="#常用命令介绍" class="headerlink" title="常用命令介绍"></a>常用命令介绍</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;postName&quot; #新建文章</span><br><span class="line">hexo new page &quot;pageName&quot; #新建页面 </span><br><span class="line">hexo g #生成静态页面至public目录   g即generate</span><br><span class="line">hexo s #开启预览访问端口（默认端口4000，&#39;ctrl + c&#39;关闭server）  s即server</span><br><span class="line">hexo d #部署到GitHub   d即deploy</span><br><span class="line">hexo h #查看帮助   h即help</span><br><span class="line">hexo v #查看Hexo的版本  v即version</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;待补充</p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="/music/米津玄師 - Lemon.mp3">
+            </audio>
+            
+        </div>
+        
+    <div id='gitalk-container' class="comment link"
+        data-ae='false'
+        data-ci=''
+        data-cs=''
+        data-r=''
+        data-o=''
+        data-a=''
+        data-d='false'
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</html>
