@@ -73,31 +73,23 @@
 <h3 id="使用工具"><a href="#使用工具" class="headerlink" title="使用工具"></a>使用工具</h3><ul>
 <li><h5 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h5><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首先我们要去Github的官网：<a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a> ，注册一个账号，然后创建一个仓库，位置如下图：</p>
 <div  align=center><img src="UseHexoandGithubtoWriteBlog.assets/2019121401.png" alt="仓库创建" style="zoom:67%;" /></div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;之后，我们开始创建仓库，按照下图的步骤：
 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;之后，我们开始创建仓库，按照下图的步骤：</p>
-<div  align=center><img src="UseHexoandGithubtoWriteBlog.assets/2019121402.png" align=center  alt="注册信息" style="zoom:50%;" /></div>
-
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;然后我们创建成功，这样这方面暂且就算可以了。</p>
 </li>
 </ul>
+<div  align=center><img src="UseHexoandGithubtoWriteBlog.assets/2019121402.png" align=center  alt="注册信息" style="zoom:50%;" /></div>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;然后我们创建成功，这样这方面暂且就算可以了。
+
+
+
 <ul>
 <li><h5 id="NodeJS"><a href="#NodeJS" class="headerlink" title="NodeJS"></a>NodeJS</h5><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;之后，我们再来安装NodeJS，根据自己的系统，安装版本：<a href="https://nodejs.org/en" target="_blank" rel="noopener">https://nodejs.org/en</a></p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中途没有什么，想调安装位置就改一下，最后打开命令行，输入<code>node -v</code>,就可以查看已安装的版本了</p>
 <div  align=center><img src="UseHexoandGithubtoWriteBlog.assets/2019121403.png" align="middle"  alt="注册信息" style="zoom:80%;" /></div>
-
-
-
 </li>
-</ul>
-<ul>
 <li><h5 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h5><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;安装Git，去官网：<a href="https://git-scm.com/downloads/" target="_blank" rel="noopener">https://git-scm.com/downloads/</a> , 下载，安装中途会有一些是否生成桌面图标，开始菜单图标，我是勾选了。然后一路默认就可以了。安装成功后，在资源管理器里右键，菜单里会多出两个选项，说明就是可以了：</p>
 <div  align=center><img src="UseHexoandGithubtoWriteBlog.assets/2019121404.png" align="middle"  alt="安装Git" style="zoom:50%;" /></div>
-
-
-
 </li>
-</ul>
-<ul>
 <li><h5 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h5><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在某个盘下，创建一个文件夹名为“Hexo”，进去，右键，“Git bash here”，进入命令行，输入：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 
@@ -106,12 +98,12 @@
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用来初始化此文件夹，可以看到此文件夹内的内容：</p>
 <div  align=center><img src="UseHexoandGithubtoWriteBlog.assets/2019121405.png" align="middle"  alt="初始化Hexo" style="zoom:67%;" /></div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public文件夹里面是存储的最终网页文件，每个网页<font color="0000AA">html</font>，<font color="0000AA">js</font>，<font color="0000AA">css</font>等。
 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public文件夹里面是存储的最终网页文件，每个网页<font color="0000AA">html</font>，<font color="0000AA">js</font>，<font color="0000AA">css</font>等。</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;source文件夹用来原始原始数据，也就是你以后要写的博客，后缀为.md的<font color="DD00AA">markdown</font>文件。</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;themes文件夹存储博客的主题文件，可以自己写，也可以去下别人已写好的，后续会讲到。</p>
 </li>
 </ul>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;source文件夹用来原始原始数据，也就是你以后要写的博客，后缀为.md的<font color="DD00AA">markdown</font>文件。</p>
+<p>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;themes文件夹存储博客的主题文件，可以自己写，也可以去下别人已写好的，后续会讲到。</p>
 <h3 id="进阶配置"><a href="#进阶配置" class="headerlink" title="进阶配置"></a>进阶配置</h3><ul>
 <li><h5 id="配置SSH"><a href="#配置SSH" class="headerlink" title="配置SSH"></a>配置SSH</h5><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;进入Git Bash，输入：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~&#x2F;. ssh #检查本机已存在的ssh密钥</span><br></pre></td></tr></table></figure>
@@ -121,8 +113,10 @@
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;再按3次回车，会在C盘用户目录下生成一个”.ssh\id_rsa.pub”的文件，记事本打开并复制里面的内容，打开你的github主页，进入个人设置 -&gt; SSH and GPG keys -&gt; New SSH key：</p>
 <div  align=center><img src="UseHexoandGithubtoWriteBlog.assets/2019121406.png" align="middle"  alt="添加SSH" style="zoom:50%;" /></div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其中Title可以给你的SSH起一个名字，Key则把你刚复制得到的SSH粘贴进去。
 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其中Title可以给你的SSH起一个名字，Key则把你刚复制得到的SSH粘贴进去。</p>
+</li>
+</ul>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;测试一下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br></pre></td></tr></table></figure>
 
@@ -131,8 +125,6 @@
 
 
 
-</li>
-</ul>
 <ul>
 <li><h5 id="查看初始博客"><a href="#查看初始博客" class="headerlink" title="查看初始博客"></a>查看初始博客</h5><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;进入Git Bash，输入：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g # 生成</span><br><span class="line">$ hexo s # 启动服务</span><br></pre></td></tr></table></figure>
