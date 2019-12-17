@@ -10,19 +10,9 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="JaneMLYY,"> 
-    <meta name="description" content="我的生活,长沙-德天顺盖码饭这篇文章，我们去长沙的德天顺盖码饭去试吃里面的各种盖饭！！并去偷学厨艺！！
+    <meta name="description" content="我的生活,长沙-德天顺盖码饭&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;这篇文章，我们去长沙的德天顺盖码饭去试吃里面的各种盖饭！！并去偷学厨艺！！
 
-
-
-
-
-
-    
-        
-        
-        
-        
-     ,"> 
+* {,"> 
     <meta name="author" content="JaneMLYY"> 
     <link rel="alternative" href="atom.xml" title="抹茶控沐汐-开始与结束的地方" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -80,33 +70,164 @@
 
         </div>
         <div class="content markdown">
-            <h1 id="长沙-德天顺盖码饭"><a href="#长沙-德天顺盖码饭" class="headerlink" title="长沙-德天顺盖码饭"></a>长沙-德天顺盖码饭</h1><p>这篇文章，我们去长沙的德天顺盖码饭去试吃里面的各种盖饭！！并去偷学厨艺！！</p>
-<link rel="stylesheet" href="style/css/mdsSlide.css">
+            <h1 id="长沙-德天顺盖码饭"><a href="#长沙-德天顺盖码饭" class="headerlink" title="长沙-德天顺盖码饭"></a>长沙-德天顺盖码饭</h1><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这篇文章，我们去长沙的德天顺盖码饭去试吃里面的各种盖饭！！并去偷学厨艺！！</p>
+<style type="text/css">
+* {padding: 0;margin: 0;font-family: "微软雅黑";font-size: 14px;}
+ul,li {list-style: none;}
+a {text-decoration: none;color: black;}
+.box{width: 80%;height: 80%;margin: 20px auto;overflow: hidden;position: relative;}
+.box-1 ul{}
+.box-1 ul li{width: 100%;height: 100%;position: relative;overflow: hidden;}
+.box-1 ul li img{display:block;width: 100%; height: 100%;}
+.box-1 ul li h2{position: absolute;left: 0;bottom: 0;height: 40px;width:300px;background: rgba(125,125,120,.4);text-indent: 2em;
+                padding-right:500px ;font-size: 15px;line-height: 40px;text-overflow: ellipsis;overflow: hidden;
+                white-space: nowrap;font-weight: normal;color: ghostwhite}
+.box-2{position: absolute;right: 10px;bottom: 14px;}
+.box-2 ul li{float:left;width: 12px;height: 12px;overflow: hidden; margin: 0 5px; border-radius: 50%;
+                background: rgba(0,0,0,0.5);text-indent: 100px;cursor: pointer;}
+.box-2 ul .on{background: rgba(255,255,255,0.6);}
+.box-3 span{position: absolute;color: white;background: rgba(125,125,120,.3);width: 50px;height: 80px;
+                top:50%; font-family: "宋体";line-height: 80px;font-size:60px;margin-top: -40px;
+                text-align: center;cursor: pointer;}
+.box-3 .prev{left: 10px;}
+.box-3 .next{right: 10px;}
+.box-3 span::selection{background: transparent;}
+.box-3 span:hover{background: rgba(125,125,120,.8);}
+</style>
 
-
-
-<div class="wrap">
-<div id="slide">
-    <ul class="list">
-        <li><a href="javascript:;"><img src="DeTianShun.assets/20191216Cover.JPG" style="zoom:12%;" /></a></li>
-        <li><a href="javascript:;"><img src="DeTianShun.assets/2019121601.JPG" style="zoom:12%;" /></a></li>
-        <li><a href="javascript:;"><img src="DeTianShun.assets/2019121602.JPG" style="zoom:12%;" /></a></li>
-        <li><a href="javascript:;"><img src="DeTianShun.assets/2019121603.JPG" style="zoom:12%;" /></a></li>
-        <li><a href="javascript:;"><img src="DeTianShun.assets/2019121604.JPG" style="zoom:12%;" /></a></li>
-    </ul>
-</div>
-</div>
-<script src="js/jquery-1.9.1.min.js"></script>
-<script src="js/Mds.onePic.1.0.js" type="text/javascript"></script>
-<script>
-    $('#slide').MdsSlideFade({
-        pageNum: true,time: '3000'
-    });
+<script type="text/javascript">
+window.onload = function(){
+    function $(param){
+        if(arguments[1] == true){
+            return document.querySelectorAll(param);
+        }else{
+            return document.querySelector(param);
+        }
+    }
+    var $box = $(".box");
+    var $box1 = $(".box-1 ul li",true);
+    var $box2 = $(".box-2 ul");
+    var $box3 = $(".box-3");
+    var $length = $box1.length;
+    var str = "";
+for(var i =0;i<$length;i++){
+    if(i==0){
+        str +="<li class='on'>"+(i+1)+"</li>";
+    }else{
+        str += "<li>"+(i+1)+"</li>";
+    }
+}
+$box2.innerHTML = str;
+    var current = 0;
+    var timer;
+    timer = setInterval(go,5000);
+    function go(){
+        for(var j =0;j<$length;j++){
+            $box1[j].style.display = "none";
+            $box2.children[j].className = "";
+        }
+        if($length == current){
+            current = 0;
+        }
+        $box1[current].style.display = "block";
+        $box2.children[current].className = "on";
+        current++;
+    }
+    for(var k=0;k<$length;k++){
+        $box1[k].onmouseover = function(){
+            clearInterval(timer);
+        }
+        $box1[k].onmouseout = function(){
+            timer = setInterval(go,5000);
+        }
+    }
+    for(var p=0;p<$box3.children.length;p++){
+        $box3.children[p].onmouseover = function(){
+            clearInterval(timer);
+        };
+        $box3.children[p].onmouseout = function(){
+            timer = setInterval(go,5000);
+        }
+    }
+    for(var u =0;u<$length;u++){
+        $box2.children[u].index  = u;
+        $box2.children[u].onmouseover = function(){
+            clearInterval(timer);
+            for(var j=0;j<$length;j++){
+                $box1[j].style.display = "none";
+                $box2.children[j].className = "";
+            }
+            this.className = "on";
+            $box1[this.index].style.display = "block";
+            current = this.index +1;
+        }
+        $box2.children[u].onmouseout = function(){
+            timer = setInterval(go,5000);
+        }
+    }
+    $box3.children[0].onclick = function(){
+        back();
+    }
+    $box3.children[1].onclick = function(){
+        go();
+    }
+    function back(){
+        for(var j =0;j<$length;j++){
+            $box1[j].style.display = "none";
+            $box2.children[j].className = "";
+        }
+        if(current == 0){
+            current = $length;
+        }
+        $box1[current-1].style.display = "block";
+        $box2.children[current-1].className = "on";
+        current--;
+    }
+}
 </script>
 
+<h3 id="第一集：孜然牛肉与野菌肉丸汤（36元-12元）"><a href="#第一集：孜然牛肉与野菌肉丸汤（36元-12元）" class="headerlink" title="第一集：孜然牛肉与野菌肉丸汤（36元+12元）"></a>第一集：孜然牛肉与野菌肉丸汤（36元+12元）</h3><center>试吃时间：2019年12月15日11:25:28</center>
 
-<p>​<br>​<br>​        </p>
+<div class="box">
+    <div class="box-1">
+        <ul>
+            <li>
+                <img src="DeTianShun.assets/20191216Cover.JPG" alt="" style="zoom:8%;" />
+                <h2>长沙-德天顺盖码饭（汇金国际店）</h2>
+            </li>
+            <li>
+                <img src="DeTianShun.assets/2019121601.JPG" alt="" style="zoom:8%;"/>
+                <h2>室内装潢</h2>
+            </li>
+            <li>
+                <img src="DeTianShun.assets/2019121602.JPG" alt="" style="zoom:8%;"/>
+                <h2>孜然牛肉与野菌肉丸汤</h2>
+            </li>
+            <li>
+                <img src="DeTianShun.assets/2019121603.JPG" alt="" style="zoom:8%;"/>
+                <h2>孜然牛肉</h2>
+            </li>
+            <li>
+                <img src="DeTianShun.assets/2019121604.JPG" alt="" style="zoom:8%;"/>
+                <h2>野菌肉丸汤</h2>
+            </li>
+        </ul>
+    </div>
+    <div class="box-2">
+        <ul>
+        </ul>
+    </div>
+    <div class="box-3">
+        <span class="prev"> < </span>
+        <span class="next"> > </span>
+    </div>
+</div>
 
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首先，我们去了长沙的德天顺盖码饭（汇金国际店），店面没有面向马路，而是在一条小路里。进店之后，里面环境还是很好的，还有接热水的地方。旁边可能有中学或小学，我去的时候比较早，没有什么人，吃到一半的时候，店里多了一些中学生（小学生）</p>
+<p><font color="#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;孜然牛肉</font>有很香的孜然味，放了牛肉、蒜薹和小米椒。虽然有小米椒，但并不辣（不过我吃的时候还是一个个的把他们挑了出来），味道很好。</p>
+<p><font color="#FF00FF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;野菌肉丸汤</font>喝起来闻到也不错，不过你不吃香菇，肉丸很柔软，放进嘴里一弄就像化了一样。</p>
+<h5 id=""><a href="#" class="headerlink" title=""></a></h5><hr>
+<h3 id="第二集：？？？"><a href="#第二集：？？？" class="headerlink" title="第二集：？？？"></a>第二集：？？？</h3>
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
                 <source type="audio/mpeg" src="/music/几米 - 拥有Masbfca.mp3">
